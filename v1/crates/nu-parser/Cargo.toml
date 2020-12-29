@@ -1,0 +1,28 @@
+[package]
+authors = ["The Nu Project Contributors"]
+description = "Nushell parser"
+edition = "2018"
+license = "MIT"
+name = "nu-parser"
+version = "0.24.2"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bigdecimal = {version = "0.2.0", features = ["serde"]}
+codespan-reporting = "0.9.5"
+derive-new = "0.5.8"
+indexmap = {version = "1.6.0", features = ["serde-1"]}
+log = "0.4.11"
+num-bigint = {version = "0.3.0", features = ["serde"]}
+num-traits = "0.2.12"
+serde = "1.0.115"
+shellexpand = "2.0.0"
+
+nu-errors = {version = "0.24.2", path = "../nu-errors"}
+nu-protocol = {version = "0.24.2", path = "../nu-protocol"}
+nu-source = {version = "0.24.2", path = "../nu-source"}
+
+[features]
+stable = []
+trace = []
